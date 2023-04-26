@@ -8,8 +8,10 @@ function App() {
         <h1> weather App</h1>
         <Weather/>
         <Circlle/>
-        < a href="https://github.com/joyibeh93/React-weather-app" target='_blank'>Source-Code</a>
-        <a href='https://stalwart-praline-fae7d1.netlify.app'>Hosted site on netlify</a>
+        <p>< a href="https://github.com/joyibeh93/React-weather-app" target='_blank' rel="noreferrer">Source-Code</a></p>
+        <p><a href='https://stalwart-praline-fae7d1.netlify.app' target='_blank' rel="noreferrer">Hosted site on netlify</a></p>
+        
+        
     </div>
   )
 }
