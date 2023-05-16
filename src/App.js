@@ -7,19 +7,15 @@ import './App.css'
 function App() {
   return (
     <div>
-      <div className="App-container">
-        {/* <Weather/> */}
-        <WeatherReport/>
-        {/* <Circlle/> */}
-        <footer>
-        <p> Developed by Ibeh Joy chinwendu using React, the source code    < a href="https://github.com/joyibeh93/React-weather-app" target='_blank' rel="noreferrer">Source-Code</a></p>
+        <div className="App-container">
+          {/* <Weather/> */}
+          <WeatherReport defaultcity="lagos"/>
+          {/* <Circlle/> */}
+          <footer>
+            <p> Developed by Ibeh Joy chinwendu using React, the source code    < a href="https://github.com/joyibeh93/React-weather-app" target='_blank' rel="noreferrer">Source-Code</a></p>
 
-        </footer>
-        
-        
-      </div>
-
-       
+          </footer>
+        </div>
     </div>
   )
 }
