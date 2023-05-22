@@ -15,7 +15,7 @@ function WeatherReport(props) {
       wind: 12,
       humidity: response.data.temperature.humidity,
       pressure: response.data.temperature.pressure,
-      imgUrl: response.data.condition.icon_url,
+      icon: response.data.condition.icon,
       description : response.data.condition.description,
       date:new Date(response.data.time *1000),
       city:response.data.city
