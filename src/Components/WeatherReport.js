@@ -15,7 +15,7 @@ function WeatherReport(props) {
       wind: 12,
       humidity: response.data.temperature.humidity,
       pressure: response.data.temperature.pressure,
-      imgUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      imgUrl: response.data.condition.icon_url,
       description : response.data.condition.description,
       date:new Date(response.data.time *1000),
       city:response.data.city
