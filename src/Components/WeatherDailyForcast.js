@@ -10,23 +10,27 @@ const WeatherDailyForcast = (props) => {
     console.log(response.data)
     setForcast(response.data.daily)
     setLoaded(true)
-
-
   }
 
   if (loaded){
-    console.log(forcast)
+    //console.log(forcast)
     return(
       <div>
-        <div className='row'>
-          <div className='col'>
+        <div className='row'>    
+            {forcast.map(function (dailyforcast, index){
 
-          <WeatherForcastDay data={forcast[0]}/>
-
-          </div>
-             
+                return(
+                    <div className='col' key={index}>
+                      <WeatherForcastDay data={dailyforcast}/>
+                    </div>
+                )
+              
+              
+                }  
+            )
+            }     
         </div>
-    </div>
+      </div>
     )
     
   }
